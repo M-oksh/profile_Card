@@ -1,1 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <style>
+        body,html{
+            padding: 0;
+            margin: 0;
+            height: 100%;
+        }
+        .cont{
+            height: 100%;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            border: 5px solid gold;
+            background-color: #333;
+            border-radius: 20px;
+            padding: 100px 100px;
+            text-align: center;
+            /* display: flex;
+            flex-direction: column; */
+        }
+        .box:hover{
+            transform: scale(1.05);
+        }
+        #profile{
+            height: 200px;;
+            width: 200px;
+            border-radius: 50%;
+            border: 2px solid gold;
+            object-fit:fill;
+        }
+        button{
+            background-color: blue;
+            color: white;
+            height: 50px;
+            width: 150px;
+            border: 2px solid gold;
+            border-radius: 20px;
+        }
+        h2{
+            color: white;
+            font-size: 200%;
+        }
 
+        #l,#x,#g{
+            border-radius: 50%;
+            border: 2px solid gold;
+            height: 48px;
+            width: 48px;
+            object-fit: cover;
+        }
+
+        #l:hover,#g:hover,#x:hover{
+            transform: scale(1.1);
+        }
+
+        .logo{
+            gap: 10;
+        }
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <div class="box">
+            <h2 style="color: white;">Moksh Kasture</h2>
+            <img id="profile" src="../image/MOKSH.jpg" alt="profile photo"><br>
+                <button>view portfolio</button>
+                <button>Major Project</button>
+             <br><br>
+            <div class="logo">
+                <img src="../image/Linkedin.jpg" alt="linkdin" id="l">
+                <img src="../image/X.jpg" alt="X img" id="x">
+                <img src="../image/github.jpg" alt="github img" id="g">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
